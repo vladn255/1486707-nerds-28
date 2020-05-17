@@ -11,10 +11,18 @@
       </a>
       <nav>
         <ul>
-          <li><a href="index.html">Студия</a></li>
-          <li><a href="blank.html">Клиенты</a></li>
-          <li><a href="blank.html">Магазин</a></li>
-          <li><a href="blank.html">Контакты</a></li>
+          <li>
+            <a href="index.html">Студия</a>
+          </li>
+          <li>
+            <a href="blank.html">Клиенты</a>
+          </li>
+          <li>
+            <a href="blank.html">Магазин</a>
+          </li>
+          <li>
+            <a href="blank.html">Контакты</a>
+          </li>
         </ul>
       </nav>
       <a href="blank.html">Корзина</a>
@@ -23,29 +31,32 @@
 
     <main>
         <section>
-          <h2>Стоимость</h2>
-          <!--Здесь будет ползунок, так понимаю, это ещё не проходили-->
-        </section>
-        <section>
+          <form action="">
+            <h2>Стоимость</h2>
+            <!--Здесь будет ползунок, так понимаю, это ещё не проходили-->
+        <fieldset>
           <h2>Отображение каталога</h2>
-          <div>
-            <h3>Сетка</h3>
-            <select>
-              <option selected value="slider">Слайдер</option>
-              <option value="advantages">Блок преимуществ</option>
-              <option value="rubber">Резиновая</option>
-            </select>
-          </div>
-          <div>
-            <h3>Особенности</h3>
-            <select multiple>
-              <option selected value="adapted">Адаптивная</option>
-              <option value="fixed">Фиксированная</option>
-              <option selected value="news">Новости</option>
-              <option value="gallery">Галерея</option>
-              <option value="basket">Корзина</option>
-            </select>
-          </div>
+          <h3>Сетка</h3>
+            <input type="radio" name="grid" id="slider" value="slider">
+            <label for="slider">Слайдер</label>
+            <input type="radio" name="grid" id="advantages" value="advantages">
+            <label for="advantages">Блок преимуществ<label>
+            <input type="radio" name="grid" id="rubber" value="rubber">
+            <label for="rubber">Резиновая<label>
+        <fieldset>
+        <fieldset>
+          <h3>Особенности</h3>
+            <input type="checkbox" name="adapted" id="adapted" value="adapted">
+            <label for="adapted">Адаптивная</label>
+            <input type="checkbox" name="fixed" id="fixed" value="fixed">
+            <label for="adapted">Фиксированная</label>
+            <input type="checkbox" name="news" id="news" value="news">
+            <label for="news">Новости</label>
+            <input type="checkbox" name="gallery" id="gallery" value="gallery">
+            <label for="gallery">Галерея</label>
+            <input type="checkbox" name="basket" id="basket" value="baskety">
+            <label for="basket">Корзина</label>
+        </fieldset>
           <button>Показать</button>
         </section>
         <section>
@@ -55,17 +66,79 @@
           </div>
           <div>
             <ul>
-              <li><a href="blank.html"><img src="img-sedona_1" alt="Sedona"></a></li>
-              <li><a href="blank.html"><img src="img-pink_1" alt="Pink"></a></li>
-              <li><a href="blank.html"><img src="img-barbershop_1" alt="Barbershop Borodinski"></a></li>
-              <li><a href="blank.html"><img src="img-mishka_1" alt="Mishka"></a></li>
-              <li><a href="blank.html"><img src="img-aplus_1" alt="aplus"></a></li>
-              <li><a href="blank.html"><img src="img-kvast_1" alt="Кваст"></a></li>
+              <li>
+                <a href="blank.html">
+                  <img src="img-sedona_1" alt="Sedona">
+                  <div>
+                    <h3>Sedona</h3>
+                    <p>Информационный сайт для туристов</p>
+                    <span>9900 Р</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="blank.html">
+                  <img src="img-pink_1" alt="Pink">
+                  <div>
+                    <h3>Pink App</h3>
+                    <p>Продуктовый лендинг приложения для iOS и Android</p>
+                    <span>9900 Р</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="blank.html">
+                  <img src="img-barbershop_1" alt="Barbershop Borodinski">
+                  <div>
+                    <h3></h3>
+                    <p></p>
+                    <span></span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="blank.html">
+                  <img src="img-mishka_1" alt="Mishka">
+                  <div>
+                    <h3></h3>
+                    <p></p>
+                    <span></span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="blank.html">
+                  <img src="img-aplus_1" alt="aplus">
+                  <div>
+                    <h3></h3>
+                    <p></p>
+                    <span></span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="blank.html">
+                  <img src="img-kvast_1" alt="Кваст">
+                  <div>
+                    <h3></h3>
+                    <p></p>
+                    <span></span>
+                  </div>
+                </a>
+              </li>
             </ul>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>Следующая</button>
+            <ul>
+              <li>
+                <button>1</button>
+              </li>
+              <li>
+                <button>2</button>
+              </li>
+              <li>
+                <button>3</button>
+              </li>
+            </ul>
+            <a href="blank.html">Следующая</a>
           </div>
         </section>
     </main>
