@@ -7,7 +7,7 @@
   <body>
     <header>
       <a href="index.html">
-        <span>nёrd's</span>
+        <image src="img/nerds-logo.svg" width="160" height="65" alt="studio logo">
       </a>
       <nav>
         <ul>
@@ -37,20 +37,20 @@
         <fieldset>
           <h2>Отображение каталога</h2>
           <h3>Сетка</h3>
-            <input type="radio" name="grid" id="slider" value="slider">
-            <label for="slider">Слайдер</label>
-            <input type="radio" name="grid" id="advantages" value="advantages">
-            <label for="advantages">Блок преимуществ<label>
+            <input type="radio" name="grid" id="adapted" value="adapted" checked>
+            <label for="adapted">Адаптивная</label>
+            <input type="radio" name="grid" id="fixed" value="fixed">
+            <label for="advantages">Фиксированная<label>
             <input type="radio" name="grid" id="rubber" value="rubber">
             <label for="rubber">Резиновая<label>
         <fieldset>
         <fieldset>
           <h3>Особенности</h3>
-            <input type="checkbox" name="adapted" id="adapted" value="adapted">
-            <label for="adapted">Адаптивная</label>
-            <input type="checkbox" name="fixed" id="fixed" value="fixed">
-            <label for="adapted">Фиксированная</label>
-            <input type="checkbox" name="news" id="news" value="news">
+            <input type="checkbox" name="slider" id="slider" value="slider" checked>
+            <label for="slider">Слайдер</label>
+            <input type="checkbox" name="advantages" id="advantages" value="advantages">
+            <label for="adapted">Блок преимуществ</label>
+            <input type="checkbox" name="news" id="news" value="news" checked>
             <label for="news">Новости</label>
             <input type="checkbox" name="gallery" id="gallery" value="gallery">
             <label for="gallery">Галерея</label>
@@ -62,13 +62,15 @@
         <section>
           <div>
             <h3>Сортировать:</h3>
-            <!--В задании говорилось оставить эту часть на потом-->
+            <span>по цене</span>
+            <span>по типу</span>
+            <span>по названию</span>
           </div>
           <div>
             <ul>
               <li>
                 <a href="blank.html">
-                  <img src="img-sedona_1" alt="Sedona">
+                  <img src="img/img-sedona 1.jpg" width="360" height="576" alt="Sedona">
                   <div>
                     <h3>Sedona</h3>
                     <p>Информационный сайт для туристов</p>
@@ -78,7 +80,7 @@
               </li>
               <li>
                 <a href="blank.html">
-                  <img src="img-pink_1" alt="Pink">
+                  <img src="img/img-pink 1.jpg" width="360" height="576" alt="Pink">
                   <div>
                     <h3>Pink App</h3>
                     <p>Продуктовый лендинг приложения для iOS и Android</p>
@@ -88,7 +90,7 @@
               </li>
               <li>
                 <a href="blank.html">
-                  <img src="img-barbershop_1" alt="Barbershop Borodinski">
+                  <img src="img/img-barbershop 1.jpg" width="360" height="576" alt="Barbershop Borodinski">
                   <div>
                     <h3></h3>
                     <p></p>
@@ -98,7 +100,7 @@
               </li>
               <li>
                 <a href="blank.html">
-                  <img src="img-mishka_1" alt="Mishka">
+                  <img src="img/img-mishka 1.jpg" width="360" height="576" alt="Mishka">
                   <div>
                     <h3></h3>
                     <p></p>
@@ -108,7 +110,7 @@
               </li>
               <li>
                 <a href="blank.html">
-                  <img src="img-aplus_1" alt="aplus">
+                  <img src="img/img-aplus 1.jpg" width="360" height="576" alt="aplus">
                   <div>
                     <h3></h3>
                     <p></p>
@@ -118,7 +120,7 @@
               </li>
               <li>
                 <a href="blank.html">
-                  <img src="img-kvast_1" alt="Кваст">
+                  <img src="img/img-kvast 1.jpg" width="360" height="576" alt="Кваст">
                   <div>
                     <h3></h3>
                     <p></p>
@@ -146,14 +148,17 @@
     <footer>
       <section>
         <h2>Контактная информация</h2>
-          <img src="map_1" alt="Карта расположения студии">
-          <img src="map-marker_1" alt="Указатель nёrd's">
+          <img src="img/map 1.png" width="1440" height="416" alt="Navigation map">
+          <img src="img/map-marker 1.png" width="231" height="190" alt="nerds map marker">
           <p>Nёrds design studio</p>
-          <p>191186, Санкт-Петербург,<br>
-            ул.Б.Конюшенная, д.19/8<br><br>
+          <address>
+            191186, Санкт-Петербург,
+            ул.Б.Конюшенная, д.19/8
+          </address>
+          <span>
             тел.+7(812)275-75-75
-            <a href="blank.html">Напишите нам</a>
-          </p>
+          </span>
+          <a href="blank.html">Напишите нам</a>
       </section>
       <section>
         <h3>Давайте дружить, это выгодно!</h3>
