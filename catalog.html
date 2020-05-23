@@ -31,34 +31,42 @@
 
     <main>
         <section>
-          <form action="">
-            <h2>Стоимость</h2>
-            <!--Здесь будет ползунок, так понимаю, это ещё не проходили-->
-        <fieldset>
-          <h2>Отображение каталога</h2>
-          <h3>Сетка</h3>
-            <input type="radio" name="grid" id="adapted" value="adapted" checked>
-            <label for="adapted">Адаптивная</label>
-            <input type="radio" name="grid" id="fixed" value="fixed">
-            <label for="fixed">Фиксированная</label>
-            <input type="radio" name="grid" id="rubber" value="rubber">
-            <label for="rubber">Резиновая</label>
-        </fieldset>
-        <fieldset>
-          <h3>Особенности</h3>
-            <input type="checkbox" name="slider" id="slider" value="slider" checked>
-            <label for="slider">Слайдер</label>
-            <input type="checkbox" name="advantages" id="advantages" value="advantages">
-            <label for="adapted">Блок преимуществ</label>
-            <input type="checkbox" name="news" id="news" value="news" checked>
-            <label for="news">Новости</label>
-            <input type="checkbox" name="gallery" id="gallery" value="gallery">
-            <label for="gallery">Галерея</label>
-            <input type="checkbox" name="basket" id="basket" value="baskety">
-            <label for="basket">Корзина</label>
-        </fieldset>
+          <h2 class="visually-hidden">Отображение каталога</h2>
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <fieldset>
+              <h3>Стоимость</h3>
+              <!--Нам сказали на лекции, что так делать не надо,
+                и что ползунок потом будем делать в CSS, но пока оставил так-->
+              <input type="range" name="cost" id="cost" min="0" max="15000">
+              <p>от</p>
+              <output name="cost_min">0</output>
+              <p>до</p>
+              <output name="cost_max">15 000</output>
+            </fieldset>
+            <fieldset>
+              <h3>Сетка</h3>
+              <input type="radio" name="grid" id="adapted" value="adapted" checked>
+              <label for="adapted">Адаптивная</label>
+              <input type="radio" name="grid" id="fixed" value="fixed">
+              <label for="fixed">Фиксированная</label>
+              <input type="radio" name="grid" id="rubber" value="rubber">
+              <label for="rubber">Резиновая</label>
+            </fieldset>
+            <fieldset>
+              <h3>Особенности</h3>
+              <input type="checkbox" name="slider" id="slider" value="slider" checked>
+              <label for="slider">Слайдер</label>
+              <input type="checkbox" name="advantages" id="advantages" value="advantages">
+              <label for="advantages">Блок преимуществ</label>
+              <input type="checkbox" name="news" id="news" value="news" checked>
+              <label for="news">Новости</label>
+              <input type="checkbox" name="gallery" id="gallery" value="gallery">
+              <label for="gallery">Галерея</label>
+              <input type="checkbox" name="basket" id="basket" value="baskety">
+              <label for="basket">Корзина</label>
+            </fieldset>
+            <button type="submit">Показать</button>
         </form>
-          <button>Показать</button>
         </section>
         <section>
           <div>
@@ -66,6 +74,10 @@
             <span>по цене</span>
             <span>по типу</span>
             <span>по названию</span>
+            <!--сортировка-уменьшение-->
+            <button type="button"></button>
+            <!--сортировка-увеличение-->
+            <button type="button"></button>
           </div>
           <div>
             <ul>
@@ -73,7 +85,7 @@
                 <a href="blank.html">
                   <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
                   <div>
-                    <h3>Sedona</h3>
+                    <h3 class="visually-hidden">Sedona</h3>
                     <p>Информационный сайт для туристов</p>
                     <span>9900 Р</span>
                   </div>
@@ -83,7 +95,7 @@
                 <a href="blank.html">
                   <img src="img/img-pink.jpg" width="360" height="576" alt="Pink">
                   <div>
-                    <h3>Pink App</h3>
+                    <h3 class="visually-hidden">Pink App</h3>
                     <p>Продуктовый лендинг приложения для iOS и Android</p>
                     <span>9900 Р</span>
                   </div>
@@ -93,7 +105,7 @@
                 <a href="blank.html">
                   <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop Borodinski">
                   <div>
-                    
+                    <h3 class="visually-hidden">Barbershop Borodinski</h3>
                   </div>
                 </a>
               </li>
@@ -101,7 +113,7 @@
                 <a href="blank.html">
                   <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
                   <div>
-                    
+                    <h3 class="visually-hidden">Mishka</h3>
                   </div>
                 </a>
               </li>
@@ -109,7 +121,7 @@
                 <a href="blank.html">
                   <img src="img/img-aplus.jpg" width="360" height="576" alt="aplus">
                   <div>
-                    
+                    <h3 class="visually-hidden">aplus</h3>
                   </div>
                 </a>
               </li>
@@ -117,7 +129,7 @@
                 <a href="blank.html">
                   <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
                   <div>
-                    
+                    <h3 class="visually-hidden">Кваст</h3>
                   </div>
                 </a>
               </li>
@@ -140,7 +152,7 @@
 
     <footer>
       <section>
-        <h2>Контактная информация</h2>
+        <h2 class="visually-hidden">Контактная информация</h2>
           <img src="img/map.png" width="1440" height="416" alt="Navigation map">
           <img src="img/map-marker.png" width="231" height="190" alt="nerds map marker">
           <p>Nёrds design studio</p>
@@ -152,6 +164,29 @@
             тел.+7(812)275-75-75
           </span>
           <a href="blank.html">Напишите нам</a>
+          <!--Здесь должен быть попап, но как его правильно делать - не знаю, обернул в div пока.-->
+          <div class="pop-up">
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <fieldset>
+                <legend>Напишите нам</legend>
+                <div>
+                  <label for="name">Ваше имя</label>
+                  <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+                </div>
+                <div>
+                  <label for="email">Ваш e-mail</label>
+                  <input type="email" name="email" id="email" placeholder="email@example.com">
+                </div>
+                <div>
+                  <label for="letter">Текст письма</label>
+                  <textarea name="letter" id="letter" placeholder="В свободной форме"></textarea>
+                </div>
+                <button type="submit">Отправить</button>
+             </fieldset>
+            </form>
+            <!--Кнопка закрыть с крестиком-->
+            <button type="button"></button>
+          </div>
       </section>
       <section>
         <h3>Давайте дружить, это выгодно!</h3>

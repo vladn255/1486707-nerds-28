@@ -36,9 +36,9 @@
     </header>
 
     <main>
-      <h1>Студия nёrd's</h1>
+      <h1 class="visually-hidden">Студия nёrd's</h1>
       <section>
-        <h2>Перечень услуг</h2>
+        <h2 class="visually-hidden">Перечень услуг</h2>
         <ul>
           <li>
             <div>
@@ -73,7 +73,7 @@
         </ul>
       </section>
       <section>
-        <h2>О компании</h2>
+        <h2 class="visually-hidden">О компании</h2>
         <div>
           <p>
             Мы-маленькая, но гордая дизайн-студия из Краснодара.
@@ -142,7 +142,7 @@
 
     <footer>
       <section>
-        <h2>Контактная информация</h2>
+        <h2 class="visually-hidden">Контактная информация</h2>
           <img src="img/map.png" width="1440" height="416" alt="Navigation map">
           <img src="img/map-marker.png" width="231" height="190" alt="nerds map marker">
           <p>Nёrds design studio</p>
@@ -154,6 +154,29 @@
             тел.+7(812)275-75-75
           </span>
           <a href="blank.html">Напишите нам</a>
+          <!--Здесь должен быть попап, но как его правильно делать - не знаю, обернул в div пока.-->
+          <div class="pop-up">
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <fieldset>
+                <legend>Напишите нам</legend>
+                <div>
+                  <label for="name">Ваше имя</label>
+                  <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+                </div>
+                <div>
+                  <label for="email">Ваш e-mail</label>
+                  <input type="email" name="email" id="email" placeholder="email@example.com">
+                </div>
+                <div>
+                  <label for="letter">Текст письма</label>
+                  <textarea name="letter" id="letter" placeholder="В свободной форме"></textarea>
+                </div>
+                <button type="submit">Отправить</button>
+             </fieldset>
+            </form>
+            <!--Кнопка закрыть с крестиком-->
+            <button type="button"></button>
+          </div>
       </section>
       <section>
         <div>
