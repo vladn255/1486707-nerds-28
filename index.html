@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8" />
@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header header_index">
     <div class="header__breadcrumbs">
       <a>
         <img class="header__logo" src="img/nerds-logo.svg" width="160" height="65" alt="studio logo" />
@@ -23,10 +23,10 @@
           <li class="nav__item"><a href="catalog.html">Магазин</a></li>
           <li class="nav__item"><a href="blank.html">Контакты</a></li>
         </ul>
-        <a class="cart" href="blank.html">Корзина</a>
       </nav>
+      <a class="cart" href="blank.html">Корзина</a>
     </div>
-    <section>
+    <section class="presentation">
       <div class="greetings">
         <h2 class="visually-hidden">Приветствие</h2>
         <p class="page__title">
@@ -51,32 +51,32 @@
       <h2 class="visually-hidden">Перечень услуг</h2>
       <ul class="features__list">
         <li class="features__item">
-          <img src="img/illustration-1.jpg" width="300" height="146" alt="laptop monitor" />
+          <img class="features__image" src="img/illustration-1.jpg" width="300" height="146" alt="laptop monitor" />
           <h3 class="feature__item-title">Веб-сайты</h3>
           <p class="feature__item-desc">
             Мир никогда не будет прежним после того как увидит ваш сайт
           </p>
-          <a class="button button-features button_opacity" href="blank.html">Заказать</a>
+          <a class="button features__button button_opacity" href="blank.html">Заказать</a>
         </li>
         <li class="features__item">
-          <img src="img/illustration-2.jpg" width="300" height="146" alt="two smaprtphones" />
+          <img class="features__image" src="img/illustration-2.jpg" width="300" height="146" alt="two smaprtphones" />
           <h3 class="feature__item-title">Приложения</h3>
           <p class="feature__item-desc">
             Покорите топ-10 приложений в Appstore и Google Play
           </p>
-          <a class="button button-features button_opacity button_green" href="blank.html">Заказать</a>
+          <a class="button features__button button_opacity button_green" href="blank.html">Заказать</a>
         </li>
         <li class="features__item">
-          <img src="img/illustration-3.jpg" width="300" height="146" alt="board with charts" />
+          <img class="features__image" src="img/illustration-3.jpg" width="300" height="146" alt="board with charts" />
           <h3 class="feature__item-title">Презентации</h3>
           <p class="feature__item-desc">
             Вы даже не подозреваете насколько вы изумительны
           </p>
-          <a class="button button-features button_opacity button_yellow" href="blank.html">Заказать</a>
+          <a class="button features__button button_opacity button_yellow" href="blank.html">Заказать</a>
         </li>
       </ul>
     </section>
-    <section>
+    <section class="index-content">
       <h2 class="visually-hidden">О компании</h2>
       <div class="text-container">
         <p class="text-container__tagline">
@@ -106,22 +106,22 @@
           с 2004 года любим точность во всем:
         </p>
         <dl class="table">
-          <dt class="table_term">
+          <dt class="table__term">
             Уровень самоотдачи
           </dt>
-          <dd class="table_desrition">
+          <dd class="table__description">
             146%
           </dd>
-          <dt class="table_term">
+          <dt class="table__term">
             Соблюдение сроков
           </dt>
-          <dd class="table_desrition">
+          <dd class="table__description">
             100%
           </dd>
-          <dt class="table_term">
+          <dt class="table__term">
             Минимальная предполата
           </dt>
-          <dd class="table_desrition">
+          <dd class="table__description">
             50%
           </dd>
         </dl>
@@ -151,7 +151,8 @@
     <section class="footer">
       <h2 class="visually-hidden">Контактная информация</h2>
       <div class="map">
-        <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="nerds map marker" />
+        <img class="map__image" src="img/map.png" height="416" width="1440" alt="map with a map marker">
+        <img class="map__marker" src="img/map-marker.png" width="231" height="190" alt="nerds map marker" />
         <div class="contact-info">
           <p class="contact-info__studio">Nёrds design studio</p>
           <address class="contact-info__address">
@@ -191,17 +192,17 @@
       <ul class="socials__list">
         <li class="socials__item">
           <a href="#"><span class="visually-hidden socials__item-link">Вконтакте</span>
-            <img class="button button-social vk-logo" src="img/vk-icon.svg" width="81" height="81" alt="vk-icon" />
+            <img class="socials__item-img vk-logo" src="img/vk-icon.svg" width="81" height="81" alt="vk-icon" />
           </a>
         </li>
         <li class="socials__item">
           <a href="#"><span class="visually-hidden socials__item-link">Facebook</span>
-            <img class="button button-social fb-logo" src="img/fb-icon.svg" width="81" height="81"
+            <img class="socials__item-img fb-logo" src="img/fb-icon.svg" width="81" height="81"
               alt="facebook-icon" /></a>
         </li>
         <li class="socials__item">
           <a href="#"><span class="visually-hidden socials__item-link">Instagram</span>
-            <img class="button button-social inst-logo" src="img/insta-icon.svg" width="81" height="81"
+            <img class="socials__item-img inst-logo" src="img/insta-icon.svg" width="81" height="81"
               alt="instagram-icon" /></a>
         </li>
       </ul>
