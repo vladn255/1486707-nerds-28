@@ -28,7 +28,7 @@
         <a class="cart" href="blank.html">Корзина</a>
       </div>
       <section class="presentation">
-        <div class="greetings">
+        <div class="greetings greetings_1">
           <h2 class="visually-hidden">Приветствие</h2>
           <p class="page__title">
             Долго, дорого, скрупулезно.
@@ -41,6 +41,35 @@
         </div>
         <div class="slider">
           <img class="slider__image" src="img/nerds-index-slide1.png" width="760" height="431"
+            alt="floating smartphones" />
+        </div>
+        <div class="greetings greetings_2 visually-hidden">
+          <h2 class="visually-hidden">Приветствие</h2>
+          <p class="page__title">
+            Любим математику как никто другой
+          </p>
+          <p class="greetings__subtitle">
+            Никакого креатива, только математические формулы<br>для расчета идеальных пропорций
+            приложения
+          </p>
+          <a class="button button_opacity" href="blank.html">Узнать больше</a>
+        </div>
+        <div class="slider visually-hidden">
+          <img class="slider__image" src="img/nerds-index-slide2_1.png" width="760" height="431"
+            alt="floating smartphones" />
+        </div>
+        <div class="greetings greetings_3 visually-hidden">
+          <h2 class="visually-hidden">Приветствие</h2>
+          <p class="page__title">
+            Только ночь, только хардкор.
+          </p>
+          <p class="greetings__subtitle">
+            Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.
+          </p>
+          <a class="button button_opacity" href="blank.html">Узнать больше</a>
+        </div>
+        <div class="slider visually-hidden">
+          <img class="slider__image" src="img/nerds-index-slide3_1.png" width="760" height="431"
             alt="floating smartphones" />
         </div>
       </section>
@@ -156,42 +185,21 @@
   <footer class="footer">
     <section class="footer__contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <div class="map">
-        <img class="map__image" src="img/map.png" height="416" width="1440" alt="map with a map marker">
+      <div class="map container">
+        <iframe class="map__image"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3008834771279!2d30.32144021576844!3d59.93875000334142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1592750633657!5m2!1sru!2sru"
+          width="1440" height="416" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div class="contact-info">
+          <p class="contact-info__studio">Nёrds design studio</p>
+          <address class="contact-info__address">
+            191186, Санкт-Петербург, ул.Б.Конюшенная, д.19/8
+          </address>
+          <span class="contact-info__tel">
+            тел.+7(812)275-75-75
+          </span>
+          <a class="button button-footer post-link" href="blank.html">Напишите нам</a>
+        </div>
         <img class="map__marker" src="img/map-marker.png" width="231" height="190" alt="nerds map marker" />
-      </div>
-      <div class="contact-info">
-        <p class="contact-info__studio">Nёrds design studio</p>
-        <address class="contact-info__address">
-          191186, Санкт-Петербург, ул.Б.Конюшенная, д.19/8
-        </address>
-        <span class="contact-info__tel">
-          тел.+7(812)275-75-75
-        </span>
-        <a class="button button-footer" href="blank.html">Напишите нам</a>
-      </div>
-      <!--Здесь должен быть попап, но как его правильно делать - не знаю, обернул в div пока.-->
-      <div class="pop-up">
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="pop-up__fieldset">
-            <legend class="pop-up__legend">Напишите нам</legend>
-            <div>
-              <label class="pop-up__label" for="name">Ваше имя:</label>
-              <input class="pop-up__input" type="text" name="name" id="name" placeholder="Имя Фамилия" />
-            </div>
-            <div>
-              <label class="pop-up__label" for="email">Ваш e-mail:</label>
-              <input class="pop-up__input" type="email" name="email" id="email" placeholder="email@example.com" />
-            </div>
-            <div>
-              <label class="pop-up__label" for="letter">Текст письма:</label>
-              <textarea class="pop-up__textarea" name="letter" id="letter" placeholder="В свободной форме"></textarea>
-            </div>
-            <button class="button button-submit" type="submit">Отправить</button>
-          </fieldset>
-        </form>
-        <!--Кнопка закрыть с крестиком-->
-        <button class="button button-close" type="button"></button>
       </div>
     </section>
     <section class="socials container">
@@ -224,6 +232,30 @@
     Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
       href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».
   </p>
+  <div class="pop-up">
+    <form class="pop-up__form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="pop-up__fieldset">
+        <span class="pop-up__legend">Напишите нам</span>
+        <button class="button button-close" type="button"></button>
+        <div class="pop-up__item">
+          <label class="pop-up__label" for="name">Ваше имя:</label>
+          <input class="pop-up__input pop-up__input_name" type="text" name="name" id="name" placeholder="Имя Фамилия" />
+        </div>
+        <div class="pop-up__item">
+          <label class="pop-up__label" for="email">Ваш e-mail:</label>
+          <input class="pop-up__input pop-up__input_email" type="email" name="email" id="email"
+            placeholder="email@example.com" />
+        </div>
+        <div class="pop-up__item pop-up__textarea">
+          <label class="pop-up__label" for="letter">Текст письма:</label>
+          <textarea class="pop-up__input pop-up__input_letter" name="letter" id="letter"
+            placeholder="В свободной форме"></textarea>
+        </div>
+        <button class="button button-submit" type="submit">Отправить</button>
+      </div>
+    </form>
+  </div>
+  <script src="js/login.js"></script>
 </body>
 
 </html>

@@ -61,16 +61,17 @@
             <legend class="filter__tag">Сетка</legend>
             <ul class="filter__list">
               <li class="filter__option">
-                <input class="filter__radio" type="radio" name="grid" id="adapted" value="adapted" checked />
-                <label class="filter__label" for="adapted">Адаптивная</label>
+                <input class="filter__radio visually-hidden" type="radio" name="grid" id="adapted" value="adapted"
+                  checked />
+                <label class="filter__label" for="adapted"><span class="filter__radio-fake"></span>Адаптивная</label>
               </li>
               <li class="filter__option">
-                <input class="filter__radio" type="radio" name="grid" id="fixed" value="fixed" />
-                <label class="filter__label" for="fixed">Фиксированная</label>
+                <input class="filter__radio visually-hidden" type="radio" name="grid" id="fixed" value="fixed" />
+                <label class="filter__label" for="fixed"><span class="filter__radio-fake"></span>Фиксированная</label>
               </li>
               <li class="filter__option">
-                <input class="filter__radio" type="radio" name="grid" id="rubber" value="rubber" />
-                <label class="filter__label" for="rubber">Резиновая</label>
+                <input class="filter__radio visually-hidden" type="radio" name="grid" id="rubber" value="rubber" />
+                <label class="filter__label" for="rubber"><span class="filter__radio-fake"></span>Резиновая</label>
               </li>
             </ul>
           </fieldset>
@@ -78,24 +79,30 @@
             <legend class="filter__tag">Особенности</legend>
             <ul class="filter__list">
               <li class="filter__option">
-                <input class="filter__checkbox" type="checkbox" name="slider" id="slider" value="slider" checked />
-                <label class="filter__label" for="slider">Слайдер</label>
+                <input class="filter__checkbox visually-hidden" type="checkbox" name="slider" id="slider" value="slider"
+                  checked />
+                <label class="filter__label" for="slider"><span class="filter__checkbox-fake"></span>Слайдер</label>
               </li>
               <li class="filter__option">
-                <input class="filter__checkbox" type="checkbox" name="advantages" id="advantages" value="advantages" />
-                <label class="filter__label" for="advantages">Блок преимуществ</label>
+                <input class="filter__checkbox visually-hidden" type="checkbox" name="advantages" id="advantages"
+                  value="advantages" />
+                <label class="filter__label" for="advantages"><span class="filter__checkbox-fake"></span>Блок
+                  преимуществ</label>
               </li>
               <li class="filter__option">
-                <input class="filter__checkbox" type="checkbox" name="news" id="news" value="news" checked />
-                <label class="filter__label" for="news">Новости</label>
+                <input class="filter__checkbox visually-hidden" type="checkbox" name="news" id="news" value="news"
+                  checked />
+                <label class="filter__label" for="news"><span class="filter__checkbox-fake"></span>Новости</label>
               </li>
               <li class="filter__option">
-                <input class="filter__checkbox" type="checkbox" name="gallery" id="gallery" value="gallery" />
-                <label class="filter__label" for="gallery">Галерея</label>
+                <input class="filter__checkbox visually-hidden" type="checkbox" name="gallery" id="gallery"
+                  value="gallery" />
+                <label class="filter__label" for="gallery"><span class="filter__checkbox-fake"></span>Галерея</label>
               </li>
               <li class="filter__option">
-                <input class="filter__checkbox" type="checkbox" name="basket" id="basket" value="baskety" />
-                <label class="filter__label" for="basket">Корзина</label>
+                <input class="filter__checkbox visually-hidden" type="checkbox" name="basket" id="basket"
+                  value="baskety" />
+                <label class="filter__label" for="basket"><span class="filter__checkbox-fake"></span>Корзина</label>
               </li>
             </ul>
           </fieldset>
@@ -247,79 +254,80 @@
     </div>
   </main>
 
-  <footer>
-    <div class="container">
-      <section class="footer">
-        <h2 class="visually-hidden">Контактная информация</h2>
-        <div class="map">
-          <img class="map__image" src="img/map.png" height="416" width="1440" alt="map with a map marker">
-          <img class="map__marker" src="img/map-marker.png" width="231" height="190" alt="nerds map marker" />
-          <div class="contact-info">
-            <p class="contact-info__studio">Nёrds design studio</p>
-            <address class="contact-info__address">
-              191186, Санкт-Петербург, ул.Б.Конюшенная, д.19/8
-            </address>
-            <span class="contact-info__tel">
-              тел.+7(812)275-75-75
-            </span>
-            <a class="button button-footer" href="blank.html">Напишите нам</a>
-          </div>
+  <footer class="footer">
+    <section class="footer__contacts">
+      <h2 class="visually-hidden">Контактная информация</h2>
+      <div class="map container">
+        <iframe class="map__image"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3008834771279!2d30.32144021576844!3d59.93875000334142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1592750633657!5m2!1sru!2sru"
+          width="1440" height="416" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div class="contact-info">
+          <p class="contact-info__studio">Nёrds design studio</p>
+          <address class="contact-info__address">
+            191186, Санкт-Петербург, ул.Б.Конюшенная, д.19/8
+          </address>
+          <span class="contact-info__tel">
+            тел.+7(812)275-75-75
+          </span>
+          <a class="button button-footer post-link" href="blank.html">Напишите нам</a>
         </div>
-        <!--Здесь должен быть попап, но как его правильно делать - не знаю, обернул в div пока.-->
-        <div class="pop-up">
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="pop-up__fieldset">
-              <legend class="pop-up__legend">Напишите нам</legend>
-              <div>
-                <label class="pop-up__label" for="name">Ваше имя:</label>
-                <input class="pop-up__input" type="text" name="name" id="name" placeholder="Имя Фамилия" />
-              </div>
-              <div>
-                <label class="pop-up__label" for="email">Ваш e-mail:</label>
-                <input class="pop-up__input" type="email" name="email" id="email" placeholder="email@example.com" />
-              </div>
-              <div>
-                <label class="pop-up__label" for="letter">Текст письма:</label>
-                <textarea class="pop-up__textarea" name="letter" id="letter" placeholder="В свободной форме"></textarea>
-              </div>
-              <button class="button button-submit" type="submit">Отправить</button>
-            </fieldset>
-          </form>
-          <!--Кнопка закрыть с крестиком-->
-          <button class="button button-close" type="button"></button>
-        </div>
-      </section>
-      <section class="socials">
-        <ul class="socials__list">
-          <li class="socials__item">
-            <a class="socials__item-link" href="#"><span class="visually-hidden ">Вконтакте</span>
-              <img class="socials__item-img vk-logo" src="img/vk-icon.svg" width="81" height="81" alt="vk-icon" />
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__item-link" href="#"><span class="visually-hidden">Facebook</span>
-              <img class="socials__item-img fb-logo" src="img/fb-icon.svg" width="81" height="81"
-                alt="facebook-icon" /></a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__item-link" href="#"><span class="visually-hidden">Instagram</span>
-              <img class="socials__item-img inst-logo" src="img/insta-icon.svg" width="81" height="81"
-                alt="instagram-icon" /></a>
-          </li>
-        </ul>
-        <div class="socials__text">
-          <h3 class="socials__tagline">Давайте дружить, это выгодно!</h3>
-          <p class="socials__subtitle">
-            Скидка 10% для друзей из социальных сетей.
-          </p>
-        </div>
-      </section>
-    </div>
+        <img class="map__marker" src="img/map-marker.png" width="231" height="190" alt="nerds map marker" />
+      </div>
+    </section>
+    <section class="socials container">
+      <ul class="socials__list">
+        <li class="socials__item">
+          <a class="socials__item-link" href="#"><span class="visually-hidden ">Вконтакте</span>
+            <img class="socials__item-img vk-logo" src="img/vk-icon.svg" width="81" height="81" alt="vk-icon" />
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__item-link" href="#"><span class="visually-hidden">Facebook</span>
+            <img class="socials__item-img fb-logo" src="img/fb-icon.svg" width="81" height="81"
+              alt="facebook-icon" /></a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__item-link" href="#"><span class="visually-hidden">Instagram</span>
+            <img class="socials__item-img inst-logo" src="img/insta-icon.svg" width="81" height="81"
+              alt="instagram-icon" /></a>
+        </li>
+      </ul>
+      <div class="socials__text">
+        <h3 class="socials__tagline">Давайте дружить, это выгодно!</h3>
+        <p class="socials__subtitle">
+          Скидка 10% для друзей из социальных сетей.
+        </p>
+      </div>
+    </section>
   </footer>
   <p class="visually-hidden">
     Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
       href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».
   </p>
+  <div class="pop-up">
+    <form class="pop-up__form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="pop-up__fieldset">
+        <span class="pop-up__legend">Напишите нам</span>
+        <button class="button button-close" type="button"></button>
+        <div class="pop-up__item">
+          <label class="pop-up__label" for="name">Ваше имя:</label>
+          <input class="pop-up__input pop-up__input_name" type="text" name="name" id="name" placeholder="Имя Фамилия" />
+        </div>
+        <div class="pop-up__item">
+          <label class="pop-up__label" for="email">Ваш e-mail:</label>
+          <input class="pop-up__input pop-up__input_email" type="email" name="email" id="email"
+            placeholder="email@example.com" />
+        </div>
+        <div class="pop-up__item pop-up__textarea">
+          <label class="pop-up__label" for="letter">Текст письма:</label>
+          <textarea class="pop-up__input pop-up__input_letter" name="letter" id="letter"
+            placeholder="В свободной форме"></textarea>
+        </div>
+        <button class="button button-submit" type="submit">Отправить</button>
+      </div>
+    </form>
+  </div>
+  <script src="js/login.js"></script>
 </body>
 
 </html>
