@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8" />
@@ -10,22 +10,24 @@
   <link href="css/style.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="page-body">
   <header class="header header_catalog">
     <div class="container">
       <div class="header__breadcrumbs">
-        <a>
-          <img class="header__logo" src="img/nerds-logo.svg" width="160" height="65" alt="studio logo" />
+        <a class="header__logo" href="index.html">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="studio logo" />
         </a>
         <nav class="nav">
           <ul class="nav__list">
-            <li class="nav__item"><a class="item-selected" href="index.html">Студия</a></li>
+            <li class="nav__item"><a href="index.html">Студия</a></li>
             <li class="nav__item"><a href="blank.html">Клиенты</a></li>
-            <li class="nav__item"><a href="catalog.html">Магазин</a></li>
+            <li class="nav__item"><a class="item-selected" href="catalog.html">Магазин</a></li>
             <li class="nav__item"><a href="blank.html">Контакты</a></li>
           </ul>
         </nav>
-        <a class="cart" href="blank.html">Корзина</a>
+        <span class="cart nav__item">
+          <a href="blank.html">Корзина</a>
+        </span>
       </div>
       <h1 class="page__title page__title_catalog">Магазин готовых шаблонов</h1>
     </div>
@@ -106,7 +108,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button button-filter" type="submit">Показать</button>
+          <button class="button button-filter" type="submit"><span class="button__submit">Показать</span></button>
         </form>
       </section>
       <section>
@@ -114,7 +116,7 @@
           <h3 class="sort__tag">Сортировать:</h3>
           <div class="sort__container">
             <ul class="sort__list">
-              <li class="sort__item">по цене</li>
+              <li class="sort__item sort__item_active">по цене</li>
               <li class="sort__item">по типу</li>
               <li class="sort__item">по названию</li>
             </ul>
@@ -133,102 +135,102 @@
         <div class="gallery">
           <ul class="gallery__list">
             <li class="gallery__item">
-              <a href="blank.html">
-                <div class="gallery__item-card">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
-                    <path
-                      d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
-                  </svg>
-                  <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona" />
-                </div>
-              </a>
+              <div class="gallery__item-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+                  <path
+                    d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
+                </svg>
+                <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona" />
+              </div>
               <div class="gallery__desc">
-                <h3 class="gallery__item-title">Sedona</h3>
+                <a class="gallery__item-link" href="blank.html">
+                  <h3 class="gallery__item-title">Sedona</h3>
+                </a>
                 <p class="gallery__subtitle">Информационный сайт для туристов</p>
                 <div class="button gallery__button"><span class="gallery__desc-price">9900 &#8381;</span>
                 </div>
               </div>
             </li>
             <li class="gallery__item">
-              <a href="blank.html">
-                <div class="gallery__item-card">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
-                    <path
-                      d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
-                  </svg>
-                  <img src="img/img-pink.jpg" width="360" height="576" alt="Pink" />
-                </div>
-              </a>
-              <div class="gallery__desc visually-hidden">
-                <h3 class="gallery__item-title">Pink App</h3>
+              <div class="gallery__item-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+                  <path
+                    d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
+                </svg>
+                <img src="img/img-pink.jpg" width="360" height="576" alt="Pink" />
+              </div>
+              <div class="gallery__desc">
+                <a class="gallery__item-link" href="blank.html">
+                  <h3 class="gallery__item-title">Pink App</h3>
+                </a>
                 <p class="gallery__subtitle">Продуктовый лендинг приложения для iOS и Android</p>
                 <div class="button gallery__button"><span class="gallery__desc-price">9900 &#8381;</span>
                 </div>
               </div>
             </li>
             <li class="gallery__item">
-              <a href="blank.html">
-                <div class="gallery__item-card">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
-                    <path
-                      d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
-                  </svg>
-                  <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop Borodinski" />
-                </div>
-              </a>
-              <div class="gallery__desc visually-hidden">
-                <h3 class="gallery__item-title">Barbershop</h3>
+              <div class="gallery__item-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+                  <path
+                    d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
+                </svg>
+                <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop Borodinski" />
+              </div>
+              <div class="gallery__desc">
+                <a class="gallery__item-link" href="blank.html">
+                  <h3 class="gallery__item-title">Barbershop</h3>
+                </a>
                 <p class="gallery__subtitle">Сайт салона красоты. Для мужчин, да.</p>
                 <div class="button gallery__button"><span class="gallery__desc-price">9900 &#8381;</span>
                 </div>
               </div>
             </li>
             <li class="gallery__item">
-              <a href="blank.html">
-                <div class="gallery__item-card">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
-                    <path
-                      d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
-                  </svg>
-                  <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka" />
-                </div>
-              </a>
-              <div class="gallery__desc visually-hidden">
-                <h3 class="gallery__item-title">Mishka</h3>
+              <div class="gallery__item-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+                  <path
+                    d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
+                </svg>
+                <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka" />
+              </div>
+              <div class="gallery__desc">
+                <a class="gallery__item-link" href="blank.html">
+                  <h3 class="gallery__item-title">Mishka</h3>
+                </a>
                 <p class="gallery__subtitle">Интернет-магазин вязаных игрушек</p>
                 <div class="button gallery__button"><span class="gallery__desc-price">9900 &#8381;</span>
                 </div>
               </div>
             </li>
             <li class="gallery__item">
-              <a href="blank.html">
-                <div class="gallery__item-card">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
-                    <path
-                      d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
-                  </svg>
-                  <img src="img/img-aplus.jpg" width="360" height="576" alt="aplus" />
-                </div>
-              </a>
-              <div class="gallery__desc visually-hidden">
-                <h3 class="gallery__item-title">aplus</h3>
+              <div class="gallery__item-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+                  <path
+                    d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
+                </svg>
+                <img src="img/img-aplus.jpg" width="360" height="576" alt="aplus" />
+              </div>
+              <div class="gallery__desc">
+                <a class="gallery__item-link" href="blank.html">
+                  <h3 class="gallery__item-title">aplus</h3>
+                </a>
                 <p class="gallery__subtitle">Лендинг курсов повышения квалификации</p>
                 <div class="button gallery__button"><span class="gallery__desc-price">9900 &#8381;</span>
                 </div>
               </div>
             </li>
             <li class="gallery__item">
-              <a href="blank.html">
-                <div class="gallery__item-card">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
-                    <path
-                      d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
-                  </svg>
-                  <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст" />
-                </div>
-              </a>
-              <div class="gallery__desc visually-hidden">
-                <h3 class="gallery__item-title">Кваст</h3>
+              <div class="gallery__item-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+                  <path
+                    d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
+                </svg>
+                <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст" />
+              </div>
+              <div class="gallery__desc">
+                <a class="gallery__item-link" href="blank.html">
+                  <h3 class="gallery__item-title">Кваст</h3>
+                </a>
                 <p class="gallery__subtitle">Промо-сайт производителя крафтового кваса</p>
                 <div class="button gallery__button"><span class="gallery__desc-price">9900 &#8381;</span>
                 </div>
