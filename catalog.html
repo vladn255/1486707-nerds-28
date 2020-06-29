@@ -146,7 +146,7 @@
                 <a class="gallery__item-link" href="blank.html">
                   <h3 class="gallery__item-title">Sedona</h3>
                 </a>
-                <p class="gallery__subtitle">Информационный сайт для туристов</p>
+                <p class="gallery__subtitle">Информационный сайт<br>для туристов</p>
                 <div class="button gallery__button"><span class="gallery__desc-price">9900 &#8381;</span>
                 </div>
               </div>
@@ -260,20 +260,18 @@
     <section class="footer__contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
       <div class="map container">
-        <iframe class="map__image"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3008834771279!2d30.32144021576844!3d59.93875000334142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1592750633657!5m2!1sru!2sru"
-          width="1440" height="416" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        <div class="contact-info">
-          <p class="contact-info__studio">Nёrds design studio</p>
-          <address class="contact-info__address">
-            191186, Санкт-Петербург, ул.Б.Конюшенная, д.19/8
-          </address>
-          <span class="contact-info__tel">
-            тел.+7(812)275-75-75
-          </span>
-          <a class="button button-footer post-link" href="blank.html">Напишите нам</a>
-        </div>
+        <div id="map" class="map__image"></div>
         <img class="map__marker" src="img/map-marker.png" width="231" height="190" alt="nerds map marker" />
+      </div>
+      <div class="contact-info">
+        <p class="contact-info__studio">Nёrds design studio</p>
+        <address class="contact-info__address">
+          191186, Санкт-Петербург, ул.Б.Конюшенная, д.19/8
+        </address>
+        <span class="contact-info__tel">
+          тел.+7(812)275-75-75
+        </span>
+        <a class="button button-footer post-link" href="blank.html">Напишите нам</a>
       </div>
     </section>
     <section class="socials container">
@@ -325,11 +323,13 @@
           <textarea class="pop-up__input pop-up__input_letter" name="letter" id="letter"
             placeholder="В свободной форме"></textarea>
         </div>
-        <button class="button button-submit" type="submit">Отправить</button>
+        <button class="button-submit" type="submit">Отправить</button>
       </div>
     </form>
   </div>
-  <script src="js/login.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=feb41a37-c229-4389-b72e-c27b3b11c014&lang=ru_RU">
+  </script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
