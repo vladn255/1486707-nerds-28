@@ -1,10 +1,10 @@
-let postLink = document.querySelector(".post-link");
-let popUp = document.querySelector(".pop-up");
-let popUpClose = popUp.querySelector(".button-close");
-let popUpName = popUp.querySelector(".pop-up__input_name");
-let popUpEmail = popUp.querySelector(".pop-up__input_email");
-let popUpLetter = popUp.querySelector(".pop-up__input_letter");
-let popUpForm = popUp.querySelector(".pop-up__form");
+var postLink = document.querySelector(".post-link");
+var popUp = document.querySelector(".pop-up");
+var popUpClose = popUp.querySelector(".button-close");
+var popUpName = popUp.querySelector(".pop-up__input_name");
+var popUpEmail = popUp.querySelector(".pop-up__input_email");
+var popUpLetter = popUp.querySelector(".pop-up__input_letter");
+var popUpForm = popUp.querySelector(".pop-up__form");
 
 var isStorageSupport = true;
 var storage = "";
