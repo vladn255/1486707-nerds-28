@@ -1253,6 +1253,7 @@ body {
   display: inline-block;
   width: 255px;
   line-height: 18px;
+  vertical-align: auto;
   text-align: center;
   margin-bottom: 33px;
   margin-top: 0px;
